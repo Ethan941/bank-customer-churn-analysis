@@ -1,0 +1,8 @@
+Bank churn modeling - run summary
+Target: Exited
+Rows: 10000 | Cols: 11
+Churn rate (global/train/test): 0.2037 / 0.2037 / 0.2035
+Default threshold: 0.5
+Min recall target (tuning): 0.65
+
+Results (see model_results.csv)
