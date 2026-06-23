@@ -1,11 +1,4 @@
 
-Ton repo `credit-card-fraud-detection` a déjà une bonne base : il contient une structure avec `data/raw`, `models`, `notebooks` et `reports/figures`, et le README actuel explique bien le contexte fraude bancaire et le déséquilibre des classes. :contentReference[oaicite:3]{index=3}
-
----
-
-# 2. README pour `bank-customer-churn-analysis`
-
-```md
 # 🏦 Bank Customer Churn Prediction
 
 Projet de **Data Science** visant à prédire le départ potentiel de clients bancaires à partir de données clients.
