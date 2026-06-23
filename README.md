@@ -1,33 +1,73 @@
-# bank-customer-churn-analysis
-# Bank Customer Churn Prediction (Finance / Banking Analytics)
 
-## Business context
-Banks want to reduce customer churn by identifying clients at risk of leaving and triggering retention actions (offers, advisor outreach, tailored products).
+Ton repo `credit-card-fraud-detection` a déjà une bonne base : il contient une structure avec `data/raw`, `models`, `notebooks` et `reports/figures`, et le README actuel explique bien le contexte fraude bancaire et le déséquilibre des classes. :contentReference[oaicite:3]{index=3}
 
-## Project goals
-- Explore and understand churn drivers (EDA)
-- Build a churn prediction model (baseline + improved)
-- Explain predictions with interpretable ML (SHAP)
-- Provide actionable business recommendations
+---
 
-## Dataset
-Public dataset (e.g., Kaggle: Bank Customer Churn).  
-> Note: dataset is not included in this repository. Please download it from the source and place it in `data/raw/`.
+# 2. README pour `bank-customer-churn-analysis`
 
-## Tech stack
-- Python (Pandas, NumPy)
-- Data visualization (Matplotlib/Seaborn)
-- Machine Learning (Scikit-learn)
-- Explainability (SHAP)
+```md
+# 🏦 Bank Customer Churn Prediction
 
-## Repository structure
-- `notebooks/`: exploration and EDA
-- `src/`: reusable code (preprocessing, training, explainability)
-- `reports/`: results, figures, business insights
-- `models/`: saved trained models (optional)
+Projet de **Data Science** visant à prédire le départ potentiel de clients bancaires à partir de données clients.
 
-## How to run
-1. Create an environment
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+L’objectif est d’identifier les clients à risque de churn afin d’aider une banque à mettre en place des actions de fidélisation ciblées.
+
+---
+
+## 🎯 Objectif du projet
+
+Le churn client représente un enjeu stratégique pour les banques.
+
+Ce projet répond à la question suivante :
+
+> Quels clients ont le plus de chances de quitter la banque, et quels facteurs expliquent ce risque ?
+
+---
+
+## 🧠 Problématique Data Science
+
+Il s’agit d’un problème de classification binaire :
+
+- `0` : client conservé
+- `1` : client ayant quitté la banque
+
+Le projet combine :
+
+- analyse exploratoire ;
+- préparation des données ;
+- entraînement de modèles ;
+- interprétation des résultats ;
+- recommandations métier.
+
+---
+
+## 🛠️ Technologies utilisées
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- SHAP
+- Jupyter Notebook
+
+---
+
+## 📁 Structure du projet
+
+```txt
+bank-customer-churn-analysis/
+│
+├── data/
+│   └── raw/                 # Données brutes
+│
+├── notebooks/               # Analyse exploratoire et modélisation
+│
+├── reports/                 # Graphiques, résultats et recommandations
+│
+├── src/                     # Code réutilisable
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
